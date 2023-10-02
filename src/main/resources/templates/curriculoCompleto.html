@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+        <Style>
+            
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+                font-family: "Poppins", sans-serif;
+            }
+
+            body{
+                /* overflow: hidden; */
+                background-color: #1c0319;
+                color: #fff;
+                font-size: 40;
+            }
+
+            .background{
+                background-image: url(Imagens/IMG_20230421_202250669.jpg);
+                background-color: #1c1919;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100vh;
+            }
+
+            header{
+                display: flex;
+                justify-content: space-around;
+                max-width: 100%;
+                align-items: center;
+                text-align: center;
+                padding-top: 1rem;
+            }
+
+            .cabecalho-link{
+                display: flex;
+                gap: 3rem;
+                font-weight: 300;
+                cursor: pointer;
+
+            }
+
+            .cabecalho-link a{
+                color: #fff;
+                font-size: 30px;
+
+            }
+
+            .cabecalho-link a:hover{
+                color: #2ecc71;
+                transition: 0.3s all;
+            }
+
+            .logo{
+                height: 60px;
+                width: 60px;
+                background: transparent;
+                border:  1px solid #2ecc71;
+                color: #2ecc71;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 40px;
+                cursor: pointer;
+            }
+
+            button{
+                color: #2ecc71;
+                background: transparent;
+                border: solid 1px #2ecc71;
+                padding: 5px;
+                border-radius: 15px;
+                font-size: 30px;
+                width: 200px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #2ecc71;
+                color: #fff;
+                transition: 0.5s;
+            }
+
+            .container-text{
+                padding: 150px 0 0 130px;
+            }
+
+            .text h3{
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .text h1{
+                color: #fff;
+                font-size: 40px;
+                margin-top: 10px;
+            }
+
+            .text span{
+                color: #2ecc71;
+            }
+
+            .text p{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 300;
+                margin-top: 10px;
+            }
+
+            .redes-sociais a{
+                color: #2ecc71;
+                padding: 20px;
+                margin-top: 10px;
+                font-size: 50px;
+
+            }
+
+            .btn-sobre-mim{
+                margin-top: 10px;
+            }
+
+            .background-color-sobre{
+                /* background-image: url(Imagens/DSC_0128.jpg); */
+                background-color: #2ecc71;
+                width: 100%;
+                padding: 100px 0px;
+
+            }
+
+            .background-color-sobre img{
+                width: 430px;
+                height: auto;
+            }
+
+            .text-sobre{
+                width: 550px;
+            }
+
+            .main-sobre{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 1130px;
+                margin: 0 auto;
+            }
+
+            .text-sobre h2{
+                color: #fff;
+                font-size: 75px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+
+            .text-sobre h5{
+                color: #fff;
+                letter-spacing: 2px;
+                font-size: 22px;
+                margin-bottom: 25px;
+                text-transform: capitalize;  
+            }
+
+            .text-sobre p{
+                color: #fff;
+                letter-spacing: 1px;
+                line-height: 28px;
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+
+            .container-servicos{
+                background-color: #101010;
+                width: 100%;
+                padding: 100px 0px;
+            }
+
+            .title{
+                color: #fff;
+                font-size: 75px;
+                width: 1130px;
+                margin: 30px auto;
+                text-align: center;
+            }
+
+
+            .caixa{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 400px;
+                flex-wrap: wrap;
+            }
+
+            .card{
+                background: #191919;
+                height: 60vh;
+                width: 335px;
+                border-radius: 20px;
+                margin: 15px;
+                position: reltive;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .card i{
+                font-size: 50px;
+                display: block;
+                text-align: center;
+                margin: 25px 0px;
+                color: #2ecc71;
+            }
+
+            h5{
+                color: #fff;
+                font-size: 23px;
+                margin-bottom: 15px;
+            }
+
+            .paragrafo-button{
+                columns: #fcfc;
+                font-size: 16px;
+                line-height: 27px;
+                margin-bottom: 25px;
+            }
+
+            .paragrafo-button button{
+                margin-top: 25px;
+            }
+
+
+            footer{
+                position: relative;
+                width: 100%;
+                height: 400px;
+                background-color: #2ecc71;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            footer h6{
+                font-size: 35px;
+                color: #fff;
+            }
+
+
+            .redes-sociais-footer a{ 
+                color: #fff;
+                padding: 20px;
+                margin-top: 10px;
+                font-size: 50px;
+            }
+     
+        </Style>
+    </head>
+        <body>   
+             <!--Parte principal  -->
+            <div class ="background">
+                <header>
+
+                    <nav>
+                        <ul class="cabecalho-link" id="inicioId" >
+                            <li><a href="#inicioId">Inicio</a></li>
+                            <li><a href="#sobreId">Sobre</a></li>
+                            <li><a href="#habilidadeId">Habilidades</a></li>
+                            <li><a href="#contatoId">Contato</a></li>
+                        </ul>
+                    </nav>    
+                </header>  
+
+
+                <div class = "container-text">
+                    <div class = "text">
+                        <h3>Hello, World!</h3>
+                        <h1>Me chamo  <span>Raian Nolaço</span></h1>
+                        <p>
+                            01010010 01100001 01101001 01100001 01101110 00100000 01001101 01100101 01100100 01100101 01101001 
+                          <br>01110010 01101111 01110011 00100000 01001110 01101111 01101100 01100001 11100111 01101111
+
+                        </p>
+
+
+                        <div class="redes-sociais">
+                            <a href="https://github.com/RaianNolaco" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://br.linkedin.com/in/raiannolaço" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com/raiannolaco" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <button class="btn-sobre-mim">Sobre mim</button>
+                    </div>
+                </div>
+            </div>    
+
+            <!-- Parte sobre mim -->
+            <section class="background-color-sobre">
+
+
+                <div class="main-sobre">
+
+                    <img src="Imagens/IMG_20230421_202250669.jpg" alt="">
+
+                    <div class="text-sobre">
+                        <h2 id="sobreId">Sobre Mim</h2>
+                        <h5>Desenvolvedor <span>& fotografo</span></h5>
+                        <p>Sou um estudante apaixonado por tecnologia, com experiência em cursos de computação gráfica, formação técnica em informática e eletrônica. Tenho habilidades em montagem e manutenção de computadores, programação, banco de dados e HTML. Tenho também experiência em lidar com desafios, como a adaptação a aulas online durante a pandemia. Recentemente, participei do Instituto PROA, uma ONG dedicada a inserir jovens no mercado de trabalho, o que reacendeu meu amor pela tecnologia. Estou em busca de oportunidades para me especializar e crescer na área de TI.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Parte de serviços -->
+            <div class ="container-servicos">
+
+                <div class="title">
+                    <h2 id="habilidadeId">Habilidades</h2>
+                </div>
+
+
+                <div class="caixa">
+
+                    <div class="card">
+                        <i class="fas fa-bars"></i>
+                        <h5>Desenvolvedor Web</h5>
+
+                        <div class="paragrafo-button">
+                            <p>Possuo exeperiencia no desenvolvimento de paginas web e de sistemas integrdos a web como API's rest ou aplicaçoes MVC</p>
+                            <button type="button">Veja mais</button>
+                        </div>    
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-user"></i>
+                        <h5>Desenvolvedor Back-end</back-end></h5>
+
+                        <div class="paragrafo-button">
+                            <p>Possuo uma vasta exeperiencia em desenvolvimento de sistemas back-end como API's e sistemas MVC como cidado anteriormente e tambem no desenvolvimento de Works e Schedules automaziados</p>
+                            <button type="button">Veja mais</button>
+                        </div>    
+                    </div>
+
+                    <div class="card">
+                        <i class="fas fa-bell"></i>
+                        <h5>fotografo</h5>
+
+                        <div class="paragrafo-button">
+                            <p>Por fim possuo a fotografia como hobbie e estou disponivel para freelances na area, tenho experiência em Adobe ligthroom e Adobe photoshop para edição das fotos</p>
+                            <button type="button">Veja mais</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+
+
+            <footer class = "footer-class" >
+
+                <h6 id="contatoId">Raian Nolaço</h6>
+                <p>Para para saber mais sobre mim e minhas qualificaçoes <br> entre em cotato pelo <strong>numero: 1190000-0000 email: raiannolaco@gmail.com</strong> ou contate-me em uma de minhas redes sociais</p>
+                <div class="redes-sociais-footer">
+                    <a href="https://github.com/RaianNolaco" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://br.linkedin.com/in/raiannolaço" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/raiannolaco" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </footer>
+
+
+
+        </body>
+</html>

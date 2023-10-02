@@ -9,20 +9,98 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Spring MVC</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+            <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+                font-family: "Poppins", sans-serif;
+            }
+
+            body {
+              background-color: #1c1919;
+              display: flex;
+              justify-content: center;
+            }
+
+            #div {
+              margin: 2vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              background-color: #1c1919;
+              width: 40vh;
+              height: 45vh;
+            }
+
+            p {
+              margin-top: 0.9vh;
+              text-decoration: none;
+              color: white;
+            }
+
+
+
+            img{
+                height: 20vh;
+                width: 20vh;
+                border-radius: 20px;
+            }
+            h1{
+                      color: #2ecc71;
+                      font-size: 40px;
+                      margin-top: 10px;
+                  }
+            
+            h5{
+                color: #fff;
+                font-size: 23px;
+                margin-bottom: 15px;
+            }
+            
+            a {
+                background-color: black;
+                color: white;
+
+                padding: 0.8em 2.4em;
+
+                border-radius: 0.5em;
+                text-decoration: none;
+            }
+
+            a:hover {
+                cursor: pointer;
+
+            }
+            .footer{
+                  flex-grow: 0;
+                  flex-basis: 100px;
+                    background-color: indianred;
+            }
+      </style>
+
     </head>
+    
+    
     <body>        
-        <div>
-           
-            <img src="https://media.licdn.com/dms/image/C4E03AQEKlxyVeM8mRw/profile-displayphoto-shrink_200_200/0/1633724212582?e=1701907200&v=beta&t=M_uQx8961yan7LyxrGuHwhRNtSO1gxjTdETOYvzkN54"style="width:150px; height:190px ; border-radius: 20px" />       
+        <div id = "divDados">         
+            <img src="https://media.licdn.com/dms/image/C4E03AQEKlxyVeM8mRw/profile-displayphoto-shrink_200_200/0/1633724212582?e=1701907200&v=beta&t=M_uQx8961yan7LyxrGuHwhRNtSO1gxjTdETOYvzkN54"/>       
             
             <h1 th:text="${nome}"></h1>    
                       
-            <p th:text = "${nome}">nome</p>    
-            <p th:text = "${numero}">nome</p>    
-            <p th:text = "${email}">nome</p>    
-            <p th:text = "${nasc}">nome</p>    
-            <p th:text = "${linkedin}">nome</p>
-            <p th:text = "${github}">nome</p>  
+            <h5>Numero: </h5><p th:text = "${numero}">numero</p>    
+            <h5>Email: </h5><p th:text = "${email}">email</p>    
+            <h5>Nasc: </h5><p th:text = "${nasc}">nasc</p>  
+            
+            <br>
+           
+            <a th:href = "${linkedin}" target = "_blank">linkedin</a>
+            <a th:href = "${github}"  target = "_blank">github</a> 
+            
         </div>
         
 

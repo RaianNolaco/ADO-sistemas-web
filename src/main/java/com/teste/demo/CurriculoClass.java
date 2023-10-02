@@ -10,7 +10,7 @@ package com.teste.demo;
  */
 public class CurriculoClass {
     public static String nome = "Raian Nolaco";
-    public static String numero = "900000000";
+    public static String numero = "940028922";
     public static String email = "Raiannolaco@gmail.com";
     public static String nasc = "11/11/2002";
     public static String linkedin = "https://www.linkedin.com/in/raiannolaco/";
